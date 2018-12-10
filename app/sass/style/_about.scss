@@ -1,0 +1,8 @@
+.about{
+  padding-top: 150px;
+  padding-bottom: 150px;
+  &__container {
+    @include make-container();
+    @include make-container-max-widths();
+  }
+}

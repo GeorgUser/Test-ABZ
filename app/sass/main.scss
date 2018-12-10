@@ -1,0 +1,66 @@
+@import "vars";
+@import "fonts";
+@import "libs";
+
+// css reset
+@import "reset";
+
+// main style
+@import "style/header";
+@import "style/hero_block";
+@import "style/about";
+@import "style/requirements";
+@import "style/users";
+@import "style/footer";
+
+// media
+@import "media"; // Always at the end
+
+
+
+
+
+
+
+.page {
+	&__container {
+		@include make-container();
+	}
+
+	&__row {
+		@include make-row();
+	}
+
+	.item__col {
+		@include make-col(6);
+
+		@include media-breakpoint-up(sm) {
+			@include make-col(12);
+		}
+		@include media-breakpoint-down(sm) {
+			@include make-col(12);
+		}
+		@include media-breakpoint-only(sm) {
+			@include make-col(12);
+		}
+	}
+}
+
+.page {
+	&__container {
+		@include make-container();
+		@include make-container-max-widths();
+	}
+
+	&__row {
+		@include make-row();
+	}
+
+	.img_blocks{
+		@include make-col(4);
+
+		@include media-breakpoint-down(md) {
+			@include make-col(12);
+		}
+	}
+}

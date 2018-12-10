@@ -1,0 +1,23 @@
+.hero_block {
+  background-image: url(../img/bg-1.jpg);
+  background-color: #1f1f55;
+  background-size: cover;
+  color: $white;
+  padding-top: 150px;
+  padding-bottom: 150px;
+  &__container {
+    @include make-container();
+    @include make-container-max-widths();
+  }
+  &__title {
+    width: 430px;
+  }
+  &__text {
+    width: 530px;
+  }
+  &__button {
+    width: 290px;
+    height: 40px;
+    background-color: $orange;
+  }
+}
