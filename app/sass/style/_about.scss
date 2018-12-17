@@ -1,4 +1,64 @@
 .about{
+  &__acquaintance {
+    display: flex;
+    img {
+      margin-top: 100px;
+    }
+    .text {
+      margin-left: 50px;
+    }
+    .get {
+      font-size: 42px;
+      margin-bottom: 30px;
+      font-family: $title-font;
+      font-weight: bold;
+    }
+    .title {
+      font-family: $title-font;
+      font-weight: bold;
+      font-size: 26px;
+    }
+    .story {
+      color: $gray;
+    }
+    .sing-up {
+      color: $orange;
+      font-family: $btn-font;
+      font-weight: bold;
+      font-size: 22px;
+    }
+  }
+
+  &__skills {
+    margin-top: 100px;
+    text-align: center;
+    .title {
+      font-family: $title-font;
+      font-weight: bold;
+      font-size: 42px;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    .items {
+      display: flex;
+      margin-top: 50px;
+    }
+    .item {
+      text-align: left;
+      margin: 0 auto;
+      max-width: 360px;
+      &__title {
+        font-family: $title-font;
+        font-weight: 600;
+        font-size: 26px;
+        margin-top: 20px;
+      }
+      &__story {
+        color: $gray;
+      }
+    }
+  }
+
   padding-top: 150px;
   padding-bottom: 150px;
   &__container {

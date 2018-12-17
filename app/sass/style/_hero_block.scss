@@ -1,6 +1,6 @@
 .hero_block {
   background-image: url(../img/bg-1.jpg);
-  background-color: #1f1f55;
+  background-color: $cyan;
   background-size: cover;
   color: $white;
   padding-top: 150px;
@@ -11,6 +11,8 @@
   }
   &__title {
     width: 430px;
+    font-family: $title-font;
+    font-weight: 600;
   }
   &__text {
     width: 530px;
@@ -19,5 +21,7 @@
     width: 290px;
     height: 40px;
     background-color: $orange;
+    font-family: $btn-font;
+    font-weight: 700;
   }
 }
